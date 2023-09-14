@@ -1,0 +1,141 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+/* Variables */
+$colorPrimary1: #CDA274;
+$colorPrimary2: #292F36;
+$colorPrimary3: #E2E2E2;
+$dmSerif: 'DM Serif Display', serif;
+$Jost: 'Jost', sans-serif;
+
+/* Buttons */
+.btn {
+  padding: 26px;
+  color: #ffffff;
+  font-family: $Jost;
+  font-size: 18px;
+  border-radius: 18px;
+  background: #292F36;
+  box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
+  text-decoration: none;
+  width: 220px;
+  text-align: center;
+  & svg {
+    margin-left: 5px;
+  }
+}
+
+.btn--large {
+  width: 287px;
+}
+
+.btn--color {
+  background: #CDA274;
+
+}
+
+/* Header */
+.header {
+  margin-top: 53px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.logo {
+  &__wrapper {
+    display: flex;
+  }
+  &__text {
+    color: $colorPrimary2;
+    font-family: $dmSerif;
+    font-size: 40px;
+    margin-left: 10px;
+  }
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+  &__link {
+    color: $colorPrimary2;
+    font-family: $Jost;
+    line-height: 125%;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
+/* Top-content */
+.top-content {
+  margin-top: 57px;
+  & .container {
+
+  }
+  &__inner {
+    padding: 208px 52px;
+    border-radius: 70px;
+    background-image: url("../images/top-content.jpg");
+    background-size: cover;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 434px;
+  }
+  &__title {
+    font-size: 65px;
+    font-family: $dmSerif;
+    line-height: 125%;
+    color: $colorPrimary2;
+  }
+  &__text {
+    font-size: 22px;
+    font-family: $Jost;
+    line-height: 150%;
+    color: $colorPrimary2;
+  }
+}
+
+/* Projects */
+.projects {
+  margin-top: 96px;
+  &__title {
+    font-family: $dmSerif;
+    font-size: 50px;
+    line-height: 125%;
+    color: $colorPrimary2;
+    text-align: center;
+  }
+  &__text {
+    font-family: $Jost;
+    font-size: 22px;
+    line-height: 150%;
+    color: #4D5053;
+    max-width: 737px;
+    text-align: center;
+    margin: 8px auto;
+  }
+}
+
+/* Media Queries */
+@media screen and (min-width: 1025px) and (max-width: 1199px) {
+  /* CSS styles for screens between 1025px and 1199px */
+
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS styles for screens between 768px and 1024px */
+
+}
+@media screen and (min-width: 381px) and (max-width: 767px) {
+  /* CSS styles for screens between 381px and 767px */
+
+}
+@media screen and (min-width: 320px) and (max-width: 380px) {
+  /* CSS styles for screens between 320px and 380px */
+
+}
