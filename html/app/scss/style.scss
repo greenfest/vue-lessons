@@ -122,6 +122,110 @@ $Jost: 'Jost', sans-serif;
   }
 }
 
+/* Projects */
+.project-items {
+  margin-top: 93px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(547px, 1fr));
+  gap: 56px 105px;
+  &__card:first-child img{
+    border-radius: 0 70px 0 0;
+  }
+  &__card:nth-child(2) img{
+    border-radius: 70px 0 0 0;
+  }
+  &__card:nth-child(3) img{
+    border-radius: 0 0 70px 0;
+  }
+  &__card:last-child img{
+    border-radius: 0 0 0 70px;
+  }
+  &__title {
+    color: $colorPrimary2;
+    font-family: $dmSerif;
+    font-size: 25px;
+    line-height: 125%;
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+  }
+  &__category {
+    color: #4D5053;
+    font-family: $Jost;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+  }
+  &__card {
+    position: relative;
+  }
+  &__icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+/* Features */
+.features {
+  background-color: #F4F0EC;
+  margin-top: 96px;
+  padding: 151px 0;
+  &__inner {
+    display: flex;
+    justify-content: center;
+    //gap: 76px;
+  }
+  &__item {
+    padding: 0 65px;
+    border-right: 1px solid #CDA274;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__item:last-child {
+    border-right: 0;
+  }
+  &__number {
+    color: $colorPrimary1;
+    font-family: $dmSerif;
+    line-height: 125%;
+    letter-spacing: 1.7px;
+    font-size: 85px;
+  }
+  &__description {
+    color: #4d5053;
+    font-family: $Jost;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    margin-top: 16px;
+  }
+}
+
+/* News */
+.news {
+  margin-top: 96px;
+  &__title {
+    color: $colorPrimary2;
+    font-size: 50px;
+    line-height: 125%;
+    font-family: $dmSerif;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+  &__description {
+    color: #4D5053;
+    font-family: $Jost;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    text-align: center;
+    max-width: 812px;
+    margin: 12px auto 0;
+  }
+}
+
 /* Media Queries */
 @media screen and (min-width: 1025px) and (max-width: 1199px) {
   /* CSS styles for screens between 1025px and 1199px */
