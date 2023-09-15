@@ -224,6 +224,159 @@ $Jost: 'Jost', sans-serif;
     max-width: 812px;
     margin: 12px auto 0;
   }
+  &__cards {
+    display: flex;
+    gap: 27px;
+    margin-top: 52px;
+  }
+  &__card {
+    &-inner {
+      border: 1px solid $colorPrimary3;
+      border-radius: 62px;
+      padding: 21px 21px 37px 21px;
+      position: relative;
+      &:hover {
+        background-color: #F4F0EC;
+      }
+      &:hover svg circle{
+        fill: #ffffff;
+      }
+    }
+    &-img {
+      border-radius: 45px 45px 0 0;
+      &-wrapper {
+        position: relative;
+      }
+    }
+    &-category {
+      position: absolute;
+      width: 124px;
+      height: 21px;
+      left: 20px;
+      bottom: 20px;
+      border-radius: 8px 8px 8px 0;
+      background: #ffffff;
+      text-align: center;
+      font-family: $Jost;
+      font-size: 16px;
+      padding: 10px 0;
+    }
+    &-title {
+      font-family: $dmSerif;
+      color: $colorPrimary2;
+      font-size: 25px;
+      line-height: 125%;
+      letter-spacing: 0.5px;
+      max-width: 289px;
+      margin-top: 10px;
+    }
+    &-date {
+      color: #4D5053;
+      font-family: $Jost;
+      font-size: 16px;
+      line-height: 150%;
+      letter-spacing: 0.16px;
+      text-transform: capitalize;
+    }
+  }
+  &__bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: 96px;
+  padding-bottom: 134px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left-column {
+    width: calc(100% / 3);
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    &-text {
+      color: $colorPrimary2;
+      font-family: $dmSerif;
+      font-size: 40px;
+      line-height: 125%;
+      margin-left: 10px;
+    }
+  }
+  &__text {
+    color: #4D5053;
+    font-family: $Jost;
+    font-size: 22px;
+    line-height: 150%;
+    letter-spacing: 0.22px;
+    margin-top: 10px;
+  }
+  &__icons {
+    margin-top: 31px;
+  }
+  &__icons .fa-linkedin-in {
+    margin-left: 54px;
+  }
+  &__center-column {
+    padding-left: 200px;
+    width: calc(100% / 3);
+  }
+  &__nav-title {
+    font-family: $dmSerif;
+    color: $colorPrimary2;
+    font-size: 25px;
+    line-height: 125%;
+  }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    & a {
+      text-decoration: none;
+      color: #4D5053;
+      font-family: $Jost;
+      font-size: 22px;
+      line-height: 300%;
+      letter-spacing: 0.22px;
+    }
+  }
+  &__right-column {
+    padding-left: 200px;
+    width: calc(100% / 3);
+  }
+  &__contact {
+    font-family: $dmSerif;
+    color: $colorPrimary2;
+    font-size: 25px;
+    line-height: 125%;
+  }
+  &__address {
+    color: #4D5053;
+    font-family: $Jost;
+    font-size: 22px;
+    letter-spacing: 0.22px;
+    margin-top: 20px;
+  }
+  &__email {
+    color: #4D5053;
+    font-family: $Jost;
+    font-size: 22px;
+    line-height: 300%;
+    letter-spacing: 0.22px;
+  }
+  &__phone {
+    color: #4D5053;
+    font-family: $Jost;
+    font-size: 22px;
+    line-height: 300%;
+    letter-spacing: 0.22px;
+  }
+
 }
 
 /* Media Queries */
