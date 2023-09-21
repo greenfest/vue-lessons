@@ -22,10 +22,8 @@
 
 <style lang="scss" scoped>
 @import '../scss/_fonts.scss';
+@import '../scss/_variables.scss';
 
-$colorPrimary2: #292F36;
-$dmSerif: 'DM Serif Display', serif;
-$Jost: 'Jost', sans-serif;
 
 .header {
   margin-top: 53px;

@@ -36,10 +36,7 @@ defineExpose({
 
 <style lang="scss" scoped>
 @import '../scss/_fonts.scss';
-
-$colorPrimary2: #292F36;
-$dmSerif: 'DM Serif Display', serif;
-$Jost: 'Jost', sans-serif;
+@import '../scss/_variables.scss';
 
 .heading {
   height: 356px;
