@@ -39,7 +39,7 @@ defineExpose({
 @import '../scss/_variables.scss';
 
 .heading {
-  height: 356px;
+  height: 350px;
   margin-top: 45px;
   &__inner {
     display: flex;

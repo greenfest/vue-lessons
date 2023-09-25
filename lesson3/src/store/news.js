@@ -3,7 +3,7 @@ const state = {
         {
             id: 1,
             title: "Let’s Get Solution For Building Construction Work",
-            category: "Kitchan Design",
+            category: "Kitchen",
             image: "src/assets/news1.jpg",
             date: "26 December,2022 "
         },
@@ -26,7 +26,7 @@ const state = {
         {
             id: 4,
             title: "Let’s Get Solution For Building Construction Work",
-            category: "Kitchan Design",
+            category: "Architecture",
             image: "src/assets/news4.jpg",
             date: "26 December,2022 "
         },
@@ -34,7 +34,7 @@ const state = {
             id: 5,
             title: "Low Cost Latest Invented Interior Designing\n" +
                 "Ideas.",
-            category: "Living Design",
+            category: "Kitchen Planning",
             image: "src/assets/news5.jpg",
             date: "22 December,2022 "
         },
@@ -42,7 +42,7 @@ const state = {
             id: 6,
             title: "Best For Any Office & Business Interior \n" +
                 "Solution",
-            category: "Interior Design",
+            category: "Bedroom",
             image: "src/assets/news6.jpg",
             date: "25 December,2022 "
         },

@@ -36,6 +36,7 @@
   &__img {
     border-radius: 50px;
     margin-top: 21px;
+    width: 750px;
   }
   &__date-wrapper {
     display: flex;

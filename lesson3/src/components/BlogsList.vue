@@ -4,7 +4,12 @@ import { useStore } from "vuex";
 import {computed} from "vue";
 
 const store = useStore();
-const newsList = computed(() => store.getters['news/getNews']);
+const activeTag = computed(() => store.getters['tags/getActiveTag']);
+const newsList = computed(() => {
+  const tag = activeTag.value;
+  if (!tag || tag === "All News") return store.getters['news/getNews'];
+  else return store.getters['news/getNews'].filter(news => news.category === tag);
+});
 </script>
 
 <template>
