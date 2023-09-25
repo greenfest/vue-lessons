@@ -3,5 +3,6 @@ import './scss/_fonts.scss'
 import './scss/_global.scss'
 import './scss/_reset.scss'
 import App from './App.vue'
+import store from "./store/index.js";
 
-createApp(App).mount('#app')
+createApp(App).use(store).mount('#app')
