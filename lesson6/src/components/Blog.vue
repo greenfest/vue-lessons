@@ -8,7 +8,7 @@
       <h4 class="news__card-title">{{ card.title }}</h4>
       <div class="news__bottom-inner">
         <p class="news__card-date">{{ card.date }}</p>
-        <a href="#" class="news__card-icon">
+        <router-link :to="getLink(card)" class="news__card-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="52"
@@ -25,7 +25,7 @@
               stroke-linejoin="round"
             />
           </svg>
-        </a>
+        </router-link>
       </div>
     </div>
   </div>
@@ -40,6 +40,13 @@ export default {
   },
   props: {
     card: Object,
+  },
+  computed: {
+    getLink() {
+      return (card) => {
+        return `/blog-details/${card.id}`;
+      };
+    },
   },
   mounted() {
     const image = new Image();
