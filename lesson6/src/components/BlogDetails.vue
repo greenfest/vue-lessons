@@ -3,7 +3,7 @@
     <h1 class="details__title">
       {{ newsItem.title }}
     </h1>
-    <img :src="imageUrl" alt="Details" class="details__img" />
+    <img :src="require(`@/assets/${newsItem.image}.jpg`)" alt="Details" class="details__img" />
     <div class="details__date-wrapper">
       <div class="details__date">{{ newsItem.date }}</div>
       <div class="details__breadcrumbs">Interior / Home / Decore</div>
@@ -28,7 +28,7 @@ import { mapGetters } from "vuex";
 export default {
   data() {
     return {
-      imageUrl: null,
+      // imageUrl: null,
     };
   },
   computed: {
@@ -41,22 +41,22 @@ export default {
       return item || null;
     },
   },
-  methods: {
-    loadNewsImage() {
-      if (this.newsItem) {
-        const image = new Image();
-        image.src = require(`@/assets/${this.newsItem.image}`);
-        this.imageUrl = image.src;
-      }
-    },
-  },
-  beforeRouteUpdate(to, from, next) {
-    this.loadNewsImage();
-    next();
-  },
-  created() {
-    this.loadNewsImage();
-  },
+  // methods: {
+  //   loadNewsImage() {
+  //     if (this.newsItem) {
+  //       const image = new Image();
+  //       image.src = require(`@/assets/${this.newsItem.image}`);
+  //       this.imageUrl = image.src;
+  //     }
+  //   },
+  // },
+  // beforeRouteUpdate(to, from, next) {
+  //   this.loadNewsImage();
+  //   next();
+  // },
+  // created() {
+  //   this.loadNewsImage();
+  // },
 };
 </script>
 

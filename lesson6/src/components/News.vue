@@ -3,18 +3,20 @@
     <div class="container">
       <h2 class="news__title">Articles & News</h2>
       <div class="news__cards">
-        <div v-for="card in getThreeNews" :key="card.id" class="news__card">
+        <div v-for="card in getThreeNews"
+             :key="card.id"
+             class="news__card">
           <div class="news__card-inner">
             <div class="news__card-img-wrapper">
-              <img :src="getUrl(card)" alt="news1" class="news__card-img" />
+              <img :src="require(`@/assets/${card.image}.jpg`)" alt="news1" class="news__card-img" />
               <div class="news__card-category">{{ card.category }}</div>
             </div>
             <h4 class="news__card-title">{{ card.title }}</h4>
             <div class="news__bottom-inner">
               <p class="news__card-date">{{ card.date }}</p>
               <router-link
-                :to="getLink(card)"
-                :key="$route.fullPath"
+                :to="`/blog-details/${card.id}`"
+
                 class="news__card-icon"
               >
                 <svg
@@ -84,14 +86,7 @@ export default {
       getNews: "getNews",
     }),
     getThreeNews() {
-      return this.getNews.splice(0, 3);
-    },
-    getUrl() {
-      return (card) => {
-        const image = new Image();
-        image.src = require(`@/assets/${card.image}`);
-        return image.src;
-      };
+      return this.getNews.slice(0, 3);
     },
     getLink() {
       return (card) => {
@@ -99,7 +94,6 @@ export default {
       };
     },
   },
-  created() {},
 };
 </script>
 

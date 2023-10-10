@@ -2,7 +2,7 @@
   <div class="news__card">
     <div class="news__card-inner">
       <div class="news__card-img-wrapper">
-        <img :src="imageUrl" alt="news1" class="news__card-img" />
+        <img :src="require(`@/assets/${card.image}.jpg`)" alt="news1" class="news__card-img" />
         <div class="news__card-category">{{ card.category }}</div>
       </div>
       <h4 class="news__card-title">{{ card.title }}</h4>
@@ -35,7 +35,6 @@
 export default {
   data() {
     return {
-      imageUrl: null,
     };
   },
   props: {
@@ -48,18 +47,10 @@ export default {
       };
     },
   },
-  mounted() {
-    const image = new Image();
-    image.src = require(`@/assets/${this.card.image}`);
-    this.imageUrl = image.src;
-  },
 };
 </script>
 
 <style scoped lang="scss">
-//@import "../scss/fonts";
-//@import "../scss/variables";
-
 .news {
   &__card {
     width: 320px;

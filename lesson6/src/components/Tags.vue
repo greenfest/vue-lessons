@@ -36,9 +36,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-//@import "../scss/fonts";
-//@import "../scss/variables";
-
 .tags {
   position: sticky;
   top: 20px;
