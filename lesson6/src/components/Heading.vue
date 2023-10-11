@@ -4,7 +4,7 @@
       <div v-if="title" class="heading__inner">
         <div class="heading__block">
           <h1 class="heading__title">{{ title }}</h1>
-          <p class="heading__breadcrumbs">Home / Blog</p>
+          <p class="heading__breadcrumbs">Home / {{ $route.name }}</p>
         </div>
       </div>
     </div>

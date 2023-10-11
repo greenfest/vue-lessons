@@ -8,10 +8,10 @@ import BlogDetailsView from "../views/BlogDetailsView.vue";
 Vue.use(VueRouter);
 
 const routes = [
-  { path: "/", component: Home },
-  { path: "/projects", component: ProjectsView },
-  { path: "/blog", component: BlogView },
-  { path: "/blog-details/:id", component: BlogDetailsView },
+  { path: "/", name: 'Home', component: Home },
+  { path: "/projects", name: 'Project', component: ProjectsView },
+  { path: "/blog", name: 'Blog', component: BlogView },
+  { path: "/blog-details/:id", name: 'Blog Details', component: BlogDetailsView },
 ];
 
 const router = new VueRouter({

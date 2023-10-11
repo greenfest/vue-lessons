@@ -1,7 +1,38 @@
-<script></script>
-
 <template>
-  <div>Hello</div>
+    <div>
+      <Navbar />
+      <Heading image="top-news-project.jpg" title="Our Project"/>
+      <Project />
+      <Footer />
+    </div>
 </template>
 
-<style scoped lang="scss"></style>
+<script>
+import Navbar from "@/components/Navbar.vue";
+import Heading from "@/components/Heading.vue";
+import Project from "@/components/Project.vue";
+import Footer from "@/components/Footer.vue";
+
+export default {
+  components: {
+    Navbar,
+    Heading,
+    Project,
+    Footer,
+  },
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    // editTag(tag) {
+    //   this.activeTag = tag;
+    // }
+  },
+};
+</script>
+
+<style scoped lang="scss">
+
+</style>
