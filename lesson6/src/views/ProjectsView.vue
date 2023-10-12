@@ -26,9 +26,7 @@ export default {
     }
   },
   methods: {
-    // editTag(tag) {
-    //   this.activeTag = tag;
-    // }
+
   },
 };
 </script>
