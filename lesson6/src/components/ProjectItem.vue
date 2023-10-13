@@ -9,7 +9,7 @@
           <h4 class="project__card-title">{{ card.name }}</h4>
           <p class="project__card-subtitle">Decor / Artchitecture</p>
         </div>
-        <router-link :to="/projects/" class="project__card-icon">
+        <router-link :to="`/project-details/${card.id}`" class="project__card-icon">
           <svg
               xmlns="http://www.w3.org/2000/svg"
               width="52"
