@@ -30,9 +30,9 @@
         <div class="footer__center-column">
           <h4 class="footer__nav-title">Pages</h4>
           <nav class="footer__nav">
-            <a href="/" class="footer__nav-link">Home</a>
-            <a href="#" class="footer__nav">Project</a>
-            <a href="#" class="footer__nav">Blog</a>
+            <router-link :to="{ name: 'Home' }" class="footer__nav-link">Home</router-link>
+            <router-link :to="{ name: 'Project' }" class="footer__nav">Project</router-link>
+            <router-link :to="{ name: 'Blog' }" class="footer__nav">Blog</router-link>
           </nav>
         </div>
         <div class="footer__right-column">

@@ -21,7 +21,7 @@
         </p>
         <div class="latest__inner">
           <p class="latest__date">26 December, 2022</p>
-          <a href="#" class="latest__open"
+          <router-link :to="getPathToLastPost" class="latest__open"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               width="52"
@@ -37,18 +37,30 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
               /></svg
-          ></a>
+          ></router-link>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+import {mapGetters} from "vuex";
+
+export default {
+  computed: {
+    ...mapGetters({
+      getNews: "getNews",
+    }),
+    getPathToLastPost() {
+      return `/blog-details/${this.getNews.length}`
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
-//@import "../scss/fonts";
-//@import "../scss/variables";
+
 
 .latest {
   &__title {

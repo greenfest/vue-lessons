@@ -2,6 +2,7 @@
   <section class="news">
     <div class="container">
       <h2 class="news__title">Articles & News</h2>
+      <p v-if="description" class="news__description">{{ description }}</p>
       <div class="news__cards">
         <div v-for="card in getThreeNews"
              :key="card.id"
@@ -78,6 +79,7 @@
 import { mapGetters } from "vuex";
 
 export default {
+  props: { description: String },
   data() {
     return {};
   },
